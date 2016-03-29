@@ -7,13 +7,14 @@
       gif = new Image(),
       ctx = canvas.getContext('2d')
       frames = [],
-      scale = 20;
+      scale = 30;
 
   canvas.style.display = "block";
   canvas.style.position = "absolute";
   canvas.style.marginLeft = "-" + parseInt(WIDTH / 2, 10) + "px";
+  canvas.style.marginTop = "-" + Math.floor(HEIGHT / 2) + 'px';
   canvas.style.left = "50%";
-  canvas.style.top = "0";
+  canvas.style.top = "50%";
   document.body.style.background = "black";
 
   canvas.width = WIDTH;
